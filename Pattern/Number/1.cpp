@@ -45,18 +45,32 @@ void print5(int n){
     }
 }
 
-void print6(int n){
-   int value = n ; 
+void print7(int n){
+   int value = 1; 
     for(int i = 1; i <= n; i++){ 
-        for(int j = 1; j <= value; j++){
-            cout << j;
+        for(int j = 1; j <= n; j++){
+            cout <<  value++;
         }
-        value--;
+       
       cout <<endl;
     }
 }
 
-
+void print8(int n){
+    int value = 1; 
+    for(int i = 1; i <= n; i++){ 
+        for(int j = 1; j <= n; j++){
+         if(value % 2 == 0){
+             cout << " Even ";
+         }else{
+             cout << value;
+         }
+            value++;
+        }
+       
+      cout <<endl;
+    }
+}
 
 
 // void print(int n){
@@ -80,6 +94,6 @@ int main(){
     for(int i = 1; i <= t; i++){
         int n;
         cin >> n;
-        print6(n);
+        print8(n);
     }
 }
