@@ -2,11 +2,13 @@
 using namespace std;
 
 void sumOfNumber(int arr[], int n){
-    int sum = 0;
+    int sum = 0; 
+  float average = 0;
    for(int i = 0; i < n; i++){
        sum += arr[i];
     }
-   cout << "sum of elements of array is : " << sum;
+    average = sum / n;
+   cout << "sum of elements of array is : " << sum << " and average is : " <<average;
 }
 
 int main(){
